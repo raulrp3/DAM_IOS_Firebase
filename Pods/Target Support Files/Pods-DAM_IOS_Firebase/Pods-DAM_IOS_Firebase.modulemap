@@ -1,0 +1,6 @@
+framework module Pods_DAM_IOS_Firebase {
+  umbrella header "Pods-DAM_IOS_Firebase-umbrella.h"
+
+  export *
+  module * { export * }
+}

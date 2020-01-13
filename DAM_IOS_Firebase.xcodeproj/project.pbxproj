@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5837E192A80814599B949F65 /* Pods_DAM_IOS_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3452F9C384D2C84DAE789F8 /* Pods_DAM_IOS_Firebase.framework */; };
 		C1B6BF9A23CCC2E200C2F3A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6BF9923CCC2E200C2F3A8 /* AppDelegate.swift */; };
 		C1B6BF9C23CCC2E200C2F3A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6BF9B23CCC2E200C2F3A8 /* SceneDelegate.swift */; };
 		C1B6BF9E23CCC2E200C2F3A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6BF9D23CCC2E200C2F3A8 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4759E441F913FA25CD4A247A /* Pods-DAM_IOS_Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAM_IOS_Firebase.release.xcconfig"; path = "Target Support Files/Pods-DAM_IOS_Firebase/Pods-DAM_IOS_Firebase.release.xcconfig"; sourceTree = "<group>"; };
 		C1B6BF9623CCC2E200C2F3A8 /* DAM_IOS_Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAM_IOS_Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B6BF9923CCC2E200C2F3A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B6BF9B23CCC2E200C2F3A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		C1B6BFA223CCC2E300C2F3A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1B6BFA523CCC2E300C2F3A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1B6BFA723CCC2E300C2F3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC33C636E249805E524EC1F6 /* Pods-DAM_IOS_Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAM_IOS_Firebase.debug.xcconfig"; path = "Target Support Files/Pods-DAM_IOS_Firebase/Pods-DAM_IOS_Firebase.debug.xcconfig"; sourceTree = "<group>"; };
+		D3452F9C384D2C84DAE789F8 /* Pods_DAM_IOS_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DAM_IOS_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5837E192A80814599B949F65 /* Pods_DAM_IOS_Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54A42C5086D2DA213F4B7B77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3452F9C384D2C84DAE789F8 /* Pods_DAM_IOS_Firebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1B6BF8D23CCC2E200C2F3A8 = {
 			isa = PBXGroup;
 			children = (
 				C1B6BF9823CCC2E200C2F3A8 /* DAM_IOS_Firebase */,
 				C1B6BF9723CCC2E200C2F3A8 /* Products */,
+				FF4F95B598D635F6CF43697A /* Pods */,
+				54A42C5086D2DA213F4B7B77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = DAM_IOS_Firebase;
 			sourceTree = "<group>";
 		};
+		FF4F95B598D635F6CF43697A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC33C636E249805E524EC1F6 /* Pods-DAM_IOS_Firebase.debug.xcconfig */,
+				4759E441F913FA25CD4A247A /* Pods-DAM_IOS_Firebase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1B6BFAA23CCC2E300C2F3A8 /* Build configuration list for PBXNativeTarget "DAM_IOS_Firebase" */;
 			buildPhases = (
+				1B9335ACB582369A8CFF392E /* [CP] Check Pods Manifest.lock */,
 				C1B6BF9223CCC2E200C2F3A8 /* Sources */,
 				C1B6BF9323CCC2E200C2F3A8 /* Frameworks */,
 				C1B6BF9423CCC2E200C2F3A8 /* Resources */,
+				627A6CE4F75339753B8744ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B9335ACB582369A8CFF392E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DAM_IOS_Firebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		627A6CE4F75339753B8744ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DAM_IOS_Firebase/Pods-DAM_IOS_Firebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DAM_IOS_Firebase/Pods-DAM_IOS_Firebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DAM_IOS_Firebase/Pods-DAM_IOS_Firebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C1B6BF9223CCC2E200C2F3A8 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		C1B6BFAB23CCC2E300C2F3A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC33C636E249805E524EC1F6 /* Pods-DAM_IOS_Firebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		C1B6BFAC23CCC2E300C2F3A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4759E441F913FA25CD4A247A /* Pods-DAM_IOS_Firebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
